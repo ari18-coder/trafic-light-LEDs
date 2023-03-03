@@ -11,6 +11,9 @@ void setup() {
   Serial.begin(9600);
  
   // Set Trig pin as output and Echo pin as input
+  pinMode(safeLED, OUTPUT);
+  pinMode(dangerLED, OUTPUT);
+  pinMode(warningLED, OUTPUT);
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
 }
